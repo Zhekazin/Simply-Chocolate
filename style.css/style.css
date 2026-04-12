@@ -1,0 +1,10 @@
+ul, li {
+    list-style: none;
+}
+:root {
+	--black: #111;
+	--orange: #fd9222;
+	--violet: #1e1823;
+	--white: #fff;
+}
+
