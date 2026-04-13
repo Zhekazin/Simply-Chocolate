@@ -8,3 +8,8 @@ li {
   --violet: #1e1823;
   --white: #fff;
 }
+
+a {
+  text-decoration: none;
+  
+}
