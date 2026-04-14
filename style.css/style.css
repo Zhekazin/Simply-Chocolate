@@ -11,10 +11,100 @@ li {
 
 a {
   text-decoration: none;
-  
+}
+
+.accent {
+  color: var(--orange);
 }
 
 body {
-  font-family: 'montserrat', sans-serif;
-  
+  font-family: "montserrat", sans-serif;
 }
+.header {
+}
+
+.header-navigation {
+}
+.header-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: var(--black);
+}
+
+.header-logo-italic {
+  font-style: italic;
+}
+.header-menu-list {
+}
+.heder-menu-item {
+}
+.htder-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+/* ------HERO--------- */
+.hero {
+  background-color: var(--violet);
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+
+.hero {
+}
+
+.hero-title {
+}
+
+.hero-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.hero-anchor-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.hero-scroll-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+/* -----------FEATURES--------- */
+.features {
+  background-color: var(--violet);
+}
+
+.features-list {
+}
+
+.feateres-item {
+}
+
+.features-subtitle {
+  font-weight: 600;
+font-size: 18px;
+color: var(--white);
+}
+
+.feauters-text {
+font-size: 14px;
+letter-spacing: -0.02em;
+color: rgba(255, 255, 255, 0.7);
+}
+/* -----------HOW IT’S MADE--------- */
