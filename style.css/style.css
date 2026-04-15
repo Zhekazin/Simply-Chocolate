@@ -38,15 +38,22 @@ body {
 }
 .header-menu-list {
 }
-.heder-menu-item {
+.header-menu-item {
 }
-.htder-menu-link {
+.header-menu-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: var(--black);
 }
+
+.header-menu-link:hover,
+.header-menu-link:focus
+ {
+  color: var(--orange);
+}
+
 /* ------HERO--------- */
 .hero {
   background-color: var(--violet);
@@ -266,5 +273,3 @@ letter-spacing: -0.02em;
 text-align: center;
 color: var(--white);
 }
-/* --закінчив на 1:33 хвилини. Перед зовером та фокусом
- */
