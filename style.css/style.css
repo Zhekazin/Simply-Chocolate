@@ -20,6 +20,7 @@ a {
 body {
   font-family: "montserrat", sans-serif;
 }
+
 .header {
 }
 
@@ -49,8 +50,7 @@ body {
 }
 
 .header-menu-link:hover,
-.header-menu-link:focus
- {
+.header-menu-link:focus {
   color: var(--orange);
 }
 
@@ -136,7 +136,6 @@ body {
 .taste-img {
 }
 
-/* --переробит 2 subtitle у білий колір-- */
 .taste-subtitle {
   font-weight: 600;
   font-size: 14px;
@@ -230,32 +229,30 @@ body {
 
 .footer-title {
   font-weight: 500;
-font-size: 28px;
-line-height: 1.21;
-letter-spacing: -0.02em;
-color: var(--white);
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--white);
 }
 
 .footer-menu-list {
-
 }
 .footer-menu-item {
-
 }
 .footer-menu-link {
   font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: -0.02em;
-color: var(--white);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--white);
 }
 
 .footer-subtitle {
   font-weight: 500;
-font-size: 14px;
-line-height: 1.29;
-text-align: center;
-color: var(--white);
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: var(--white);
 }
 
 .footer-contacts {
@@ -268,8 +265,9 @@ color: var(--white);
 
 .footer-contacts-link {
   font-size: 14px;
-line-height: 1.29;
-letter-spacing: -0.02em;
-text-align: center;
-color: var(--white);
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--white);
 }
+ghjcnj ntcn!!!
