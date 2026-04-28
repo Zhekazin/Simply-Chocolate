@@ -270,4 +270,41 @@ body {
   text-align: center;
   color: var(--white);
 }
-ghjcnj ntcn!!!
+
+/* -----------MODAL----------------------------- */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.250s ease-in-out;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: var(--white);
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 2 px 4px rgba(0, 0, 0, 0.2);
+  max-width: 480px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
