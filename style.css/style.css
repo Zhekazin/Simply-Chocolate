@@ -31,7 +31,7 @@ a {
 }
 
 body {
-  font-family: "montserrat", sans-serif;
+  font-family: 'montserrat', sans-serif;
   background-color: #fafafa;
 }
 
@@ -45,7 +45,6 @@ body {
 .header {
   padding-top: 28px;
   padding-bottom: 28px;
-
 }
 
 .header-navigation {
@@ -107,7 +106,7 @@ body {
 }
 
 .hero-controls {
-    display: flex;
+  display: flex;
   align-items: center;
   gap: 14px;
 }
@@ -203,15 +202,18 @@ body {
   margin-top: 100px;
   margin-bottom: 28px;
   font-weight: 600;
-font-size: 24px;
-line-height: 1.17;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-text-align: center;
-color: var(--black);
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  max-width: 411px;
+  margin: 100px auto 28px auto;
 }
 
 .accent {
+  color: var(--orange);
 }
 
 .taste-title {
@@ -229,7 +231,6 @@ color: var(--black);
   justify-content: center;
 }
 
-
 .taste-item {
 }
 
@@ -244,7 +245,6 @@ color: var(--black);
 }
 
 .taste-img {
-
 }
 
 .taste-subtitle {
@@ -303,6 +303,7 @@ color: var(--black);
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -334,6 +335,7 @@ color: var(--black);
   font-weight: 600;
   font-size: 18px;
   color: var(--black);
+  margin-bottom: 100px;
 }
 
 /* -----FOOTER---------- */
@@ -353,6 +355,7 @@ color: var(--black);
 }
 .footer-menu-item {
 }
+
 .footer-menu-link {
   font-weight: 500;
   font-size: 14px;
