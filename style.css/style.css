@@ -160,6 +160,7 @@ body {
 }
 
 .features-list {
+  display: flex;
 }
 
 .features-item {
@@ -198,6 +199,8 @@ body {
   max-width: 411px;
   margin: 0 auto;
   margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
 }
 
 .taste-item {
@@ -214,6 +217,7 @@ body {
 }
 
 .taste-img {
+
 }
 
 .taste-subtitle {
