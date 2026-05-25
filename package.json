@@ -1,0 +1,11 @@
+{
+  "name": "simply-chocolate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.9.0"
+  }
+}

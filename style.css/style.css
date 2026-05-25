@@ -1,7 +1,20 @@
 ul,
 li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 :root {
   --black: #111;
   --orange: #fd9222;
@@ -30,6 +43,8 @@ body {
 }
 
 .header {
+  padding-top: 28px;
+  pbadding-bottom: 28px;
 }
 
 .header-navigation {
@@ -48,6 +63,7 @@ body {
   font-style: italic;
 }
 .header-menu-list {
+  
 }
 .header-menu-item {
 }
@@ -180,6 +196,8 @@ body {
   text-align: center;
   color: var(--black);
   max-width: 411px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .taste-item {
