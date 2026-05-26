@@ -349,6 +349,12 @@ width: calc((100% - 57px) / 4);
   color: var(--black);
   margin-bottom: 100px;
   margin-top: 50px;
+  border: 1px solid var(--orange);
+border-radius: 100px;
+padding-block: 14px;
+padding-inline: 40px;
+width: 222px;
+height: 50px;
 }
 
 /* -----FOOTER---------- */
