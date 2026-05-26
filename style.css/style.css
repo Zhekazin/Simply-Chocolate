@@ -182,7 +182,9 @@ body {
 }
 
 .features-item {
+  width: calc ((100% - 140px) / 3);
 }
+
 
 .features-subtitle {
   font-weight: 600;
@@ -199,8 +201,6 @@ body {
 /* ---------------TASTE--------- */
 
 .taste {
-  margin-top: 100px;
-  margin-bottom: 28px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
@@ -232,6 +232,16 @@ body {
 }
 
 .taste-item {
+border: 1px solid #fd9222;
+border-radius: 15px;
+background-color: #fff;
+padding: 27px 31px;
+width: calc((100% - 57px) / 4);
+}
+
+.taste-list {
+  gap: 19px;
+  display: flex;
 }
 
 .taste-text {
@@ -245,13 +255,15 @@ body {
 }
 
 .taste-img {
+    display: block;
+  margin-bottom: 36px; 
 }
 
 .taste-subtitle {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  letter-spacing: -0.2em;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--black);
 }
@@ -336,6 +348,7 @@ body {
   font-size: 18px;
   color: var(--black);
   margin-bottom: 100px;
+  margin-top: 50px;
 }
 
 /* -----FOOTER---------- */
@@ -376,6 +389,7 @@ body {
   font-style: normal;
 }
 .footer-contacts-list {
+  display: flex; /* робимо список флекс-контейнером */
 }
 .footer-contacts-item {
 }
