@@ -88,10 +88,18 @@ body {
 }
 
 /* ------HERO--------- */
+
 .hero {
   background-color: var(--violet);
   border-radius: 30px;
   margin-bottom: 72px;
+  background-image: linear-gradient(rgba(30, 24, 35, 0.4), transparent), url('../Img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1200px;
+  
+  text-align: center;
 }
 
 .hero-title {
@@ -101,7 +109,7 @@ body {
   letter-spacing: -0.03em;
   color: var(--white);
   margin-bottom: 32px;
-  margin: left 32px;
+  margin-left: 32px;
   max-width: 484px;
 }
 
@@ -158,6 +166,8 @@ body {
   background-color: var(--violet);
   padding-top: 50px;
   padding-bottom: 50px;
+  min-width: 1200px;
+  height: 260px;
 }
 
 .visually-hidden {
@@ -182,9 +192,8 @@ body {
 }
 
 .features-item {
-  width: calc ((100% - 140px) / 3);
+  width: calc((100% - 140px) / 3);
 }
-
 
 .features-subtitle {
   font-weight: 600;
@@ -212,10 +221,6 @@ body {
   margin: 100px auto 28px auto;
 }
 
-.accent {
-  color: var(--orange);
-}
-
 .taste-title {
   font-weight: 600;
   font-size: 24px;
@@ -232,11 +237,11 @@ body {
 }
 
 .taste-item {
-border: 1px solid #fd9222;
-border-radius: 15px;
-background-color: #fff;
-padding: 27px 31px;
-width: calc((100% - 57px) / 4);
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 27px 31px;
+  width: calc((100% - 57px) / 4);
 }
 
 .taste-list {
@@ -255,8 +260,8 @@ width: calc((100% - 57px) / 4);
 }
 
 .taste-img {
-    display: block;
-  margin-bottom: 36px; 
+  display: block;
+  margin-bottom: 36px;
 }
 
 .taste-subtitle {
@@ -319,8 +324,6 @@ width: calc((100% - 57px) / 4);
   margin-bottom: 50px;
 }
 
-.accent {
-}
 .review-list {
 }
 .review-item {
@@ -341,6 +344,9 @@ width: calc((100% - 57px) / 4);
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
+  font-weight: 600;
+
+
 }
 
 .review-btn {
@@ -350,16 +356,20 @@ width: calc((100% - 57px) / 4);
   margin-bottom: 100px;
   margin-top: 50px;
   border: 1px solid var(--orange);
-border-radius: 100px;
-padding-block: 14px;
-padding-inline: 40px;
-width: 222px;
-height: 50px;
+  border-radius: 100px;
+  padding-block: 14px;
+  padding-inline: 40px;
+  width: 222px;
+  height: 50px;
 }
 
 /* -----FOOTER---------- */
 .footer {
   background-color: var(--violet);
+  min-width: 1200px;
+  height: 298px;
+ margin: 0 auto;
+
 }
 
 .footer-title {
@@ -439,7 +449,7 @@ height: 50px;
   padding: 20px;
   border-radius: 4px;
   padding: 16px;
-  box-shadow: 0 2 px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   max-width: 480px;
   max-height: 80%;
   overflow-y: auto;
