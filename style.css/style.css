@@ -45,6 +45,7 @@ body {
 .header {
   padding-top: 28px;
   padding-bottom: 28px;
+  max-width: 1200px;
 }
 
 .header-navigation {
