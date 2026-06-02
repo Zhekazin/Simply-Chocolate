@@ -58,19 +58,31 @@ body {
   align-items: center;
 }
 
+
 .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px; 
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: var(--black);
+  margin-left: 32px;
+}
 
+.header-logo-icon {
+  flex-shrink: 0;
+  transform: rotate(-25deg);
+  fill: transparent;
+  stroke: #FD9222;
 }
 
 .header-social-list {
   display: flex;
   gap: 18px;
   align-items: 90px;
+  margin-right: 32px;
 }
 
 .header-logo-italic {
@@ -99,8 +111,15 @@ body {
   text-align: center;
 }
 
+.header-contacts-icon:hover,
+.header-contacts-icon:focus,
+.header-contacts-icon:active {
+  stroke: var(--orange);
+}
+
 .header-menu-link:hover,
-.header-menu-link:focus {
+.header-menu-link:focus,
+.header-menu-link:active {
   color: var(--orange);
 }
 
