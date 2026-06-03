@@ -22,8 +22,21 @@ h6 {
   --white: #fff;
 }
 
+img {
+  display: block;
+
+}
+
 a {
   text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
 }
 
 .accent {
@@ -173,7 +186,20 @@ body {
   width: 146px;
   height: 46px;
   background: var(--orange);
+
+  &:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
+  }
+transition-property: background-color, color;
+transition-duration: 0.3s;
+transition-delay: 100ms;
+transition-timing-function: cubic-bezier(0.16, 1.08, 0, 1.41), color 0.3s cubic-bezier(0.16, 1.08, 0, 1.41);
+
 }
+
+
+
 
 .hero-anchor-btn {
   font-weight: 600;
