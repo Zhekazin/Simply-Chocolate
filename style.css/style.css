@@ -185,30 +185,6 @@ body {
 .hero-wrapper {
   padding: 380px 40px 40px 40px;
 }
-/*--
-.hero-btn {
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--white);
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 14px;
-  border-radius: 100px;
-  padding-block: 14px;
-  padding-inline: 40px;
-  width: 146px;
-  height: 46px;
-  background: var(--orange);
-  transition-property: background-color, color;
-  transition-duration: 0.3s;
-  transition-delay: 100ms;
-  transition-timing-function:
-  cubic-bezier(0.16, 1.08, 0, 1.41),
-  color 0.3s cubic-bezier(0.16, 1.08, 0, 1.41);
-}
-  /*-- Оптимізований та виправлений запис транзицій */
 
 .hero-btn {
   font-weight: 600;
@@ -606,6 +582,7 @@ font-size: 24px;
 line-height: 1.17;
 text-transform: uppercase;
 color: var(--black);
+margin-bottom: 40px;
 }
 
 .modal-field {
@@ -636,6 +613,7 @@ color: var(--black);
   box-sizing: border-box;
   padding-left: 62px;
   padding-right: 24px;
+  outline: transparent;
 }
 
 .modal-input-wrapper {
@@ -652,6 +630,15 @@ color: var(--black);
 
 }
 
+.modal-input:focus {
+  outline: 2px solid var(--orange);
+  border-color: var(--orange);
+}
+
+.modal-input:focus + .modal-input-icon {
+  stroke: var(--orange);
+}
+
 .modal-input::placeholder {
   color: rgba(17, 17, 17, 0.7);
   font-size: 14px;
@@ -662,3 +649,51 @@ color: var(--black);
   border-color: var(--orange);
   color: var(--orange);
 }
+
+.modal-text-area {
+height: 137px;
+width: 100%;
+
+  border: 1px solid #111;
+  border-radius: 15px;
+  width: 100%;
+  height: 132px;
+  padding: 8px 16px;
+  background: transparent;
+  font-size: 14px;
+  color: var(--black);
+  margin-bottom: 0;
+  box-sizing: border-box;
+  outline: transparent;
+  resize: none;
+}
+
+.modal-privacy-link {
+  color: var(--orange);
+   text-decoration: underline;
+   margin-bottom: 40px;
+   margin-left: 40px;
+}
+
+.text-privacy {
+.text-privacy {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+}
+
+.modal-button {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  border: 1px solid var(--orange);
+  border-radius: 100px;
+  padding-block: 14px;
+  padding-inline: 40px;
+  width: 146px;
+  height: 46px;
+  background: var(--orange);
+  margin-top: 40px;
+}
+

@@ -340,7 +340,7 @@
       </address>
     </footer>
     <!---------------------------- Modal ----------------------->
-    <div class="overlay is-open">
+    <div class="overlay .is-open">
       <!--зайва крапка в із опен закриває модалку-->
       <div class="modal">
         <button type="button" class="modal-close">
@@ -352,6 +352,7 @@
           LEAVE A REVIEW ABOUT
           <span class="accent">OUR CHOCOLATE</span>
         </p>
+        <!---------------------------- Modal form  user----------------------->
         <form class="modal-form">
           <div class="modal-field">
             <label class="modal-label" for="user-name">Name</label>
@@ -368,28 +369,64 @@
               </svg>
             </div>
           </div>
-
-          <label class="modal-label" for="user-email">Email</label>
-          <input
-            type="email"
-            id="user-email"
-            class="modal-input"
-            name="user-email"
-            placeholder="Your email"
-          />
-
-          <label class="modal-label" for="user-tel">Phone Number</label>
-          <input
-            type="tel"
-            id="user-tel"
-            class="modal-input"
-            name="user-tel"
-            placeholder="Your phone number"
-          />
-          <button type="submit" class="modal-btn">Send</button>
+          <!---------------------------- Modal form email----------------------->
+          <div class="modal-field">
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="modal-input-wrapper">
+              <input
+                type="email"
+                id="user-email"
+                class="modal-input"
+                name="user-email"
+                placeholder="Your email"
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./Img/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!--Modal form phone-------------------------------------------->
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Phone Number</label>
+            <div class="modal-input-wrapper">
+              <input
+                type="tel"
+                id="user-tel"
+                class="modal-input"
+                name="user-tel"
+                placeholder="Your phone number"
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./Img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-text-area"
+              id="user-comment"
+              class="modal-input"
+              name="user-comment"
+              placeholder="Your comment"
+            ></textarea>
+          </div>
+          <!---------------------------- Checkbox----------------------->
+          <div class="text-privacy">
+            <input type="checkbox" name="privacy" id="privacy" />
+            <label for="privacy">
+              I accept the terms and conditions of the
+              <a href="/privacy-policy" class="modal-privacy-link"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <!---------------------------- Modal form submit button----------------------->
+          <div>
+            <button type="submit" class="modal-button">Send</button>
+          </div>
         </form>
       </div>
     </div>
-    <!---------------------------- modal ----------------------->
   </body>
 </html>
