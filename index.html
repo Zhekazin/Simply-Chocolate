@@ -340,7 +340,7 @@
       </address>
     </footer>
     <!---------------------------- Modal ----------------------->
-    <div class="overlay .is-open">
+    <div class="overlay is-open">
       <!--зайва крапка в із опен закриває модалку-->
       <div class="modal">
         <button type="button" class="modal-close">
@@ -387,7 +387,7 @@
           </div>
           <!--Modal form phone-------------------------------------------->
           <div class="modal-field">
-            <label class="modal-label" for="user-tel">Phone Number</label>
+            <label class="modal-label" for="user-comment">Phone number</label>
             <div class="modal-input-wrapper">
               <input
                 type="tel"
@@ -402,7 +402,7 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="modal-label modal-input" for="user-comment"
+            <label class="modal-label" for="user-comment"
               >Comment</label
             >
             <textarea
@@ -412,11 +412,22 @@
               placeholder="Your comment"
             ></textarea>
           </div>
+          <div>
+            
+          </div>
           <!---------------------------- Checkbox----------------------->
           <div class="text-privacy">
-            <input type="checkbox" name="privacy" id="privacy" />
+            <input type="checkbox" 
+            name="privacy" 
+            id="privacy"
+            required
+            value="true"
+             />
             <label for="privacy">
               I accept the terms and conditions of the
+              <span>
+                
+              </span>
               <a href="/privacy-policy" class="modal-privacy-link"
                 >Privacy Policy</a
               >
