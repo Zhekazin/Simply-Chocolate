@@ -378,6 +378,19 @@ body {
 /* ---------- MADE ---- */
 
 .made {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.made-wrapper {
+display: flex;
+gap: 20px;
+}
+
+.made-content {
+border-radius: 15px;
+background-color: #fff;
+padding: 32px;
 }
 
 .made-title {
@@ -389,7 +402,8 @@ body {
   text-align: center;
   color: var(--black);
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+  max-width: 250px;
 }
 
 .made-img {
@@ -400,9 +414,31 @@ body {
   font-size: 18px;
   line-height: 1.33;
   color: var(--black);
+  margin-bottom: 28px;
+
 }
 
 .made-item {
+  margin-bottom: 24px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.made-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+}
+
+.made-item :last-child {
+  margin-bottom: 0px;
 }
 
 .made-item-text {
@@ -414,7 +450,11 @@ body {
 /* ---------REVIEW--------- */
 
 .review {
+  padding-top: 50px;
+  padding-bottom: 100px;
+
 }
+
 .review-title {
   font-weight: 600;
   font-size: 24px;
@@ -424,21 +464,40 @@ body {
   text-align: center;
   color: var(--black);
   margin-top: 100px;
-  margin-bottom: 50px;
+
+  margin-bottom: 90px;
 }
 
 .review-list {
+display: flex;
+gap: 28px;
+margin-bottom: 50px;
 }
+
 .review-item {
+  width: calc((100%-56px)/3);
+  border: 1px solid rgba(17, 17, 17, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.5);
+  background: #fff;
+  position: relative;
+  padding: 56px 24px 24px 24px;
 }
+
 .review-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 .review-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
   color: var(--black);
+  margin-bottom: 24px;
 }
 
 .review-item-text {
@@ -458,10 +517,11 @@ body {
   margin-top: 50px;
   border: 1px solid var(--orange);
   border-radius: 100px;
-  padding-block: 14px;
-  padding-inline: 40px;
-  width: 222px;
-  height: 50px;
+  padding: 14px 40px;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 /* -----FOOTER---------- */
@@ -471,7 +531,20 @@ body {
   height: 298px;
   margin: 0 auto;
   padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 32px;
+}
+
+.footer-top {
+  margin-bottom: 24px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-contscts-wrapper {
+
 }
 
 .footer-title {
@@ -480,10 +553,14 @@ body {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: var(--white);
+  max-width: 300px;
 }
 
 .footer-menu-list {
+display: flex;
+gap: 24px;
 }
+
 .footer-menu-item {
 }
 
@@ -499,17 +576,55 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   color: var(--white);
+  margin-bottom: 14px;
+
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-input {
+  width: 313px;
+  height: 52px;
+  border-radius: 30px;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  padding-left: 13px;
+  padding-right: 13px;
+  color: #fff;
+}
+
+.footer-input::placeholder {
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footer-form-btn {
+
 }
 
 .footer-contacts {
   font-style: normal;
 }
-.footer-contacts-list {
-  display: flex; /* робимо список флекс-контейнером */
+.footer-contacts-list:not(:last-child) {
+  display: flex; 
+  margin-bottom: 4px;
 }
+
 .footer-contacts-item {
+
 }
 
 .footer-contacts-link {
@@ -696,10 +811,10 @@ body {
   margin-top: 40px;
 }
 
-.modal-chek::checked + .modal-chek-label span {
+.modal-chek:checked + .modal-chek-label span {
   background-color: var(--orange);
   border-color: var(--orange);
-
+  fill: #fff;
 }
 
 .modal-check-label {
@@ -708,8 +823,26 @@ body {
   color: rgba(64, 64, 64, 0.7);
   display: flex;
   align-items: center;
+
+  a {
+    color: #fd9222;
+    text-decoration: underline;
+  }
 }
 
+.modal-check-label span {
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+/*
 span {
   width: 20px;
   height: 20px;
@@ -717,6 +850,7 @@ span {
   border-radius: 12px;
   margin-right: 12px;
 }
+*/
 
 .modal-cheked {
   background-color: var(--orange);
