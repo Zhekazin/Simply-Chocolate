@@ -273,6 +273,24 @@ body {
   width: calc((100% - 140px) / 3);
 }
 
+.features-icon-wrapper {
+  .features-icon-wrapper {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.features-icon {
+  fill: transparent;
+  stroke: var(--orange);
+}
+}
+
 .features-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -612,11 +630,23 @@ gap: 24px;
 }
 
 .footer-form-btn {
-
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 14px;
+border-radius: 100px;
+padding-block: 17px;
+padding-inline: 40px;
+width: 137px;
+height: 52px;
+background: var(--orange);
+margin-right: 32px;
 }
 
 .footer-contacts {
   font-style: normal;
+
 }
 .footer-contacts-list:not(:last-child) {
   display: flex; 
@@ -624,7 +654,7 @@ gap: 24px;
 }
 
 .footer-contacts-item {
-
+  margin-right: 28px;
 }
 
 .footer-contacts-link {
@@ -633,6 +663,7 @@ gap: 24px;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--white);
+    margin-right: 26px;
 }
 
 /* -----------MODAL----------------------------- */
