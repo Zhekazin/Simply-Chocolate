@@ -345,12 +345,49 @@ body {
   width: calc((100% - 57px) / 4);
   position: relative;
   overflow: hidden;
+
+}
+
+.features-item--orange { 
+  background-color: #fd9222; 
+}
+.features-item--white { 
+  background-color: #fff; 
+}
+.features-item--dark   { 
+  background-color: #1e1823; 
 }
 
 .taste-item:hover .taste-item-text {
   transform: translateY(0);
 }
 
+.taste-item-btns {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.taste-btn {
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.taste-btn--orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.taste-btn--grey {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  color: var(--black);
+}
 
 .taste-item-text {
   position: absolute;
